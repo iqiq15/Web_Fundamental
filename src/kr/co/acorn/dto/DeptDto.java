@@ -1,4 +1,5 @@
 package kr.co.acorn.dto;
+
 public class DeptDto {
 	private int no;
 	private String name;
@@ -31,7 +32,6 @@ public class DeptDto {
 	public void setLoc(String loc) {
 		this.loc = loc;
 	}
-	
 	
 }
 

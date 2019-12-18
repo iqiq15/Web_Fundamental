@@ -12,20 +12,25 @@ public class ConnLocator {
 	public static Connection getConnection() {
 		DataSource ds = null;
 		Connection con = null;
-		
 		try {
 			Context context = new InitialContext();
 			ds = (DataSource) context.lookup("java:comp/env/jdbc/acorn");
 			con = ds.getConnection();
-		} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			
 		} catch (NamingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		
 		return con;
 	}
 }
+
+
+
+
+
+
+
+
