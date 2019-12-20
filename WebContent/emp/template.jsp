@@ -1,5 +1,5 @@
-<%@ page pageEncoding="utf-8"%>
-<%@ include file="../inc/header.jsp" %>
+<%@ page pageEncoding="utf-8" %>
+<%@ include file="../inc/header.jsp" %>  
   <!-- breadcrumb start-->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -14,10 +14,15 @@
     <div class="row">
       <div class="col-lg-12">
         
-
+		
         
       </div>
     </div>
   </div>
   <!-- main end-->
-<%@ include file="../inc/footer.jsp" %>
+  <%@ include file="../inc/footer.jsp" %> 
+  
+  
+  
+  
+  

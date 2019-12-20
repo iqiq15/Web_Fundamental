@@ -1,6 +1,7 @@
 <%@ page pageEncoding="utf-8"%>
-<!-- footer start-->
-  <footer class="bg-dark bd-footer fixed-bottom" style="color:white;padding:1em;">
+
+  <!-- footer start-->
+  <footer class="bg-dark bd-footer" style="color:white;padding:1em;margin-top:1em;">
     <div class="container-fluid text-center">
       <p>Since 2019-12-13</p>
     </div>

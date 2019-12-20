@@ -1,17 +1,17 @@
-<%@page import="kr.co.acorn.dto.DeptDto"%>
-<%@page import="kr.co.acorn.dao.DeptDao"%>
+<%@page import="kr.co.acorn.dto.EmpDto"%>
+<%@page import="kr.co.acorn.dao.EmpDao"%>
 <%@ page pageEncoding="utf-8" %>
 <%
 	request.setCharacterEncoding("utf-8");
 	int no = Integer.parseInt(request.getParameter("no"));
 	String tempPage = request.getParameter("page");
 	
-	DeptDao dao = DeptDao.getInstance();
+	EmpDao dao = EmpDao.getInstance();
 	boolean isSuccess = dao.delete(no);
 	if(isSuccess){
 %>
 	<script>
-	alert('부서정보가 삭제 되었습니다.');
+	alert('사원정보가 삭제 되었습니다.');
 	location.href="list.jsp?page=<%=tempPage%>";
 	</script>
 <%	}else{ %>
